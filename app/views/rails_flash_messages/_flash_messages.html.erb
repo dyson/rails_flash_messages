@@ -1,0 +1,12 @@
+<div class="alert alert-<%= type %> alert-dismissable">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <% unless header.blank? %>
+    <strong><%= header %></strong>
+  <% end %>
+  <% if header.present? and body.present? %>
+    &nbsp;
+  <% end %>
+  <% unless body.blank? %>
+    <%= body %>
+  <% end %>
+</div>
